@@ -7,8 +7,6 @@ The line height on the <p> tag gives each box a height value*/
 p
 {
 	color: black;
-	line-height: 100px;
-	background-color: grey;
 	text-align: center;
 	margin: 0;
 }
@@ -143,10 +141,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 /*Get rid of this, here just to give different height to promo*/
-#promo p 
-{
-	line-height: 250px;
-}
 
 #promoText 
 {
@@ -170,10 +164,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 /*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
-}
 
 .programs
 {
@@ -201,7 +191,12 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	background-image: url(../images/index_animation.png);
 }
 
-
+.info
+{
+	text-align: center;
+	padding-top: 25px;
+	color: whitesmoke;
+}
 
 #mainFooter 
 {
