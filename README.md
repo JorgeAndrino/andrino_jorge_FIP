@@ -14,12 +14,12 @@ Including:
 
  1. Copy the link of this repository
  2. In the terminal, input the destination you want the repository to be with:
-    ```
+    
     cd 
-    ```
+    
  3. use this command and add the link you copied:
-    ```
+    
     git clone
-    ```
-
+    
+```
 ##Made by Jorge Andrino
