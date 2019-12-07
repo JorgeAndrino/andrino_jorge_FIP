@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Designing Principles</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
@@ -10,25 +10,30 @@
 </head>
 <body>
     <div id="siteContainer"><!--Start of siteContainer-->
-        
+        <h1 class="hidden">Designing Principles</h1>
     	<header id="mainHeader">
         	<div id="logo">
-                <img src="images/logotype.png">
+                <img src="images/logotype.png" alt="Logo">
             </div><!--end logo-->
 
             <nav id="mainNav">
+                <h2 class="hidden">Main Nav</h2>
                 <a href="index.html">Home</a> 
                 <a href="info.html">Information</a> 
                 <a href="contact.html">Contact</a> 
             </nav><!--end mainNav-->
         </header><!--end mainHeader-->
 
-        <section id="promo">
-        	<div id="promoText"><p>Promo Text</p></div><!--end promoText-->
-        	<div id="promoImage"><p>Promo Image</p></div><!--end promoImage-->
+        <section id="informativeStart">
+                <h2 class="hidden">Informative Start</h2>
+        	<div><p id="info">Get ready to learn the ways of the design world from diferent perpectives. 
+                We will show you how to Animate, edit pictures, make motion video and create art from your own imagination. 
+                We will teach you each tool of all this wonderfull programs so you can understand their use and create your own.</p></div><!--end promoText-->
+        	<div id="promoImage"><img src="images/main_index_info.png" alt="Computer sending files to the Internet"></div><!--end promoImage-->
         </section><!--end promo-->
 
-        <section id="productInfo">
+        <section id="programInfo">
+                <h2 class="hidden">Program Options</h2>
         	<section class="programs" id="motion">
                 <h3>Motion</h3>
                 <p class="info">Create visul art and enjoy how your creations come to life</p>
@@ -49,11 +54,12 @@
 
         <footer id="mainFooter">
             <nav id="footerNav">
+                <h2 class="hidden">Footer Nav</h2>
                 <a href="index.html">Home</a> 
                 <a href="info.html">Information</a> 
                 <a href="contact.html">Contact</a> 
             </nav><!--end footerNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+            <div id="copyRight"><p id="copyright">Designing Principles &copy;</p></div><!--end Copyright-->
         </footer><!--end mainFooter-->
 
     </div><!--end siteContainer-->

@@ -1,35 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
-
-p
-{
-	color: black;
-	text-align: center;
-	margin: 0;
-}
-
-/*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
-
-div,p,body,header,footer,section,article
-{ 
-	margin: 0; 
-	padding: 0; 
-}	
-
-img 
-{ 
-	border: none; /*Remove border if image is a link*/
-	margin: 0; 
-	padding: 0; 
-}
 
 a
 {
 	color: black;
+	font-family: 'Oswald', sans-serif;
+}
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+	color: darkgray;
 }
 
 nav
@@ -52,6 +40,14 @@ h3
 	font-size: 30px;
 	color: white;
 	padding-top: 215px;
+	font-family: 'Oswald', sans-serif;;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
 }
 
 /*html selectors*/
@@ -63,28 +59,6 @@ body
 	color: #333;
 }
 
-
-/*a:link is for not visited(standard unclicked link), 
-a:visited is for visited, and just a applies to both.*/
-/*a will also style anchor links*/
-
-a:link, a:visited 
-{ 
- 	text-decoration:none; 	
-}
-
-a:hover, a:active 
-{ 
-	text-decoration:none; 
-	color: darkgray;
-}
-
-/*hide elements from browser but show for doc outline*/
-
-.hidden
-{
-	display: none;
-}
 
 /*section is block level and no width specidied therefore stretches full screen*/
 #topBar
@@ -130,7 +104,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 500px;
 }
 
-#promo 
+#informativeStart
 {
 	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
@@ -142,18 +116,17 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 /*Get rid of this, here just to give different height to promo*/
 
-#promoText 
+#info
 {
 	width: 600px;
+	font-size: 20px;
+	text-align: left;
+	line-height: 35px;
+	padding-top: 25px;
+	font-family: 'Tomorrow', sans-serif;
 }
 
-#promoImage 
-{
-	margin-left: auto;
-	width: 280px;
-}
-
-#productInfo 
+#programInfo 
 {
 	margin-top: 40px;
 	display: flex;
@@ -162,8 +135,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
 }
-
-/*Get rid of this, here just to give different height to productInfo*/
 
 .programs
 {
@@ -194,8 +165,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 .info
 {
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 20px;
 	color: whitesmoke;
+	font-family: 'Tomorrow', sans-serif;
 }
 
 #mainFooter 
@@ -218,86 +190,61 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 310px;
 }
 
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
-
-#contentCon {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
-}
-
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
+#copyright
 {
-	line-height: 630px;
+	text-align: right;
+	font-size: 20px;
+	padding-top: 50px;
+	font-family: 'Oswald', sans-serif;
 }
+
+/*Page 2*/
+
+#contentCon 
+{
+
+}
+
 
 #content1 
 {
-	width: 440px;
+	text-align: left;
+	font-size: 30px;
+	line-height: 50px;
+	font-family: 'Tomorrow', sans-serif;
+	margin-top: 50px;
+	margin-bottom: 70px;
 }
 
-#content2 
-{
-	margin-left: auto;
-	width: 440px;
-}
 
 /*Page 3*/
 
-#productImages 
+#contactInfo
 {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
+	font-family: 'Tomorrow', sans-serif;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
 }
 
-/*Get rid of this, here just to give different height*/
-#productImages p
+.contactForm
 {
-	line-height: 250px;
+	margin-top: 50px;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+	padding-left: 180px;
 }
 
-.productImg 
-{
-	width: 280px;
-}
-
-
-#contentAreaBig
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height*/
-#contentAreaBig p 
-{
-	line-height: 300px;
-}
-
-#promoImageBig
-{
-	width: 920px;
-}
-
-
-/*Page 4*/
-
-.productDescLargeLeft 
-{
-	width: 410px;
-}
-
-.productDescLargeRight 
-{
-	width: 410px;
-}
-
+input, select {
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	width: 300px;
+	height: 10px;
+	background-color: #efefef;
+	display: block;
+	border: 1px solid #999;
+	color: #333;
+	font-family: 'Tomorrow', sans-serif;
+  }

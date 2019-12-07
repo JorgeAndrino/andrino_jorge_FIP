@@ -2,40 +2,68 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Designing Principles</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div id="siteContainer"><!--Start of siteContainer-->
+    <div id="siteContainer"><!--Start of siteContainer-->
+        <h1 class="hidden">Designing Principles</h1>
     	<header id="mainHeader">
+
             <div id="logo">
-                <img src="images/logotype.png">
+                <img src="images/logotype.png" alt="Logo">
             </div><!--end logo-->
             <nav id="mainNav">
+                <h2 class="hidden">Main Nav</h2>
                 <a href="index.html">Home</a> 
                 <a href="info.html">Information</a> 
                 <a href="contact.html">Contact</a> 
             </nav><!--end mainNav-->
+
         </header><!--end mainHeader-->
-        <section id="productImages">
-        	<section class="productImg"><p>Product Image</p></section><!--end productImg1-->
-            <section class="productImg"><p>Product Image</p></section><!--end productImg2-->
-            <section class="productImg"><p>Product Image</p></section><!--end productImg3-->
-        </section><!--end productImages-->
-        <section id="contentAreaBig">
-        	<p>Content Area</p>
-        </section>
+        <section class="contactForm">
+            <h2 class="hidden">Contact Form</h2>
+        	<p id="contactInfo">
+                If you wish to get all the information and our fees for this program we encourge you to fill this contact form
+                 so we can get in contact with you and start this wonderfull journey of art and creation.
+            </p>
+            <form class="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">Email: (required)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                    
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                    
+                    <label>Do you go to a School, College or University?</label>
+                    <select name="institution" size="2">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option> 
+                    </select>
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+
+        </section><!--End of contact Form-->
+        
         <footer id="mainFooter">
+
             <nav id="footerNav">
+                <h2 class="hidden">Footer Nav</h2>
                 <a href="index.html">Home</a> 
                 <a href="info.html">Information</a> 
                 <a href="contact.html">Contact</a> 
             </nav><!--end footerNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
+            <div id="copyRight"><p id="copyright">Designing Principles &copy;</p></div><!--end Copyright-->
+
         </footer><!--end mainFooter-->
+
     </div><!--end siteContainer-->
 <script src="js/main.js"></script>    
 </body>
