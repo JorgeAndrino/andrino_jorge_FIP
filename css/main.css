@@ -6,9 +6,9 @@ The line height on the <p> tag gives each box a height value*/
 
 p
 {
-	color: #fff;
+	color: black;
 	line-height: 100px;
-	background: #000;
+	background-color: grey;
 	text-align: center;
 	margin: 0;
 }
@@ -16,7 +16,7 @@ p
 /*basic reset*/
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
 
-div,p,body,header,footer,section,article,nav 
+div,p,body,header,footer,section,article
 { 
 	margin: 0; 
 	padding: 0; 
@@ -27,6 +27,33 @@ img
 	border: none; /*Remove border if image is a link*/
 	margin: 0; 
 	padding: 0; 
+}
+
+a
+{
+	color: black;
+}
+
+nav
+{
+	text-align: center;
+	font-size: 300%;
+	padding-top: 110px;
+	word-spacing: 30px;
+	
+}
+
+#footerNav
+{
+	padding-top: 30px;
+}
+
+h3
+{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	padding-top: 215px;
 }
 
 /*html selectors*/
@@ -51,6 +78,7 @@ a:link, a:visited
 a:hover, a:active 
 { 
 	text-decoration:none; 
+	color: darkgray;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -147,10 +175,33 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	line-height: 300px;
 }
 
-.productDesc 
+.programs
 {
 	width: 200px;
+	height: 300px;
 }
+
+#motion
+{
+	background-image: url(../images/index_motion.png);
+}
+
+#design
+{
+	background-image: url(../images/index_design.png);
+}
+
+#editing
+{
+	background-image: url(../images/index_editing.png);
+}
+
+#animation
+{
+	background-image: url(../images/index_animation.png);
+}
+
+
 
 #mainFooter 
 {
