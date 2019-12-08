@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+/*General stuff*/
+/*html selectors*/
 
 a
 {
@@ -16,17 +17,16 @@ a:link, a:visited
 
 a:hover, a:active 
 { 
+	color: rgb(9, 29, 131);
 	text-decoration:none; 
-	color: darkgray;
 }
 
 nav
 {
-	text-align: center;
 	font-size: 300%;
 	padding-top: 110px;
+	text-align: center;
 	word-spacing: 30px;
-	
 }
 
 #footerNav
@@ -36,11 +36,11 @@ nav
 
 h3
 {
-	text-align: center;
-	font-size: 30px;
 	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
 	padding-top: 215px;
-	font-family: 'Oswald', sans-serif;;
+	text-align: center;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -50,54 +50,40 @@ h3
 	display: none;
 }
 
-/*html selectors*/
-
 body 
 {
+	color: #333;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
-	color: #333;
+	
 }
 
-
-/*section is block level and no width specidied therefore stretches full screen*/
-#topBar
-{
-	background-color: #000;
-	height: 20px;
-}
 
 /*Site Container*/
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
 
 #siteContainer 
 {
 	margin: 0 auto;
 	width: 920px;
-	padding-left: 20px;
-	padding-right: 20px;
 }
 
-/*This is a flex container*/
+
 #mainHeader
 {
-	margin-top: 40px;
-	padding-bottom: 40px;
+	border-bottom: solid 1px #DDD;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
-	border-bottom: solid 1px #DDD;
+	justify-content: flex-start;
+	margin-top: 40px;
+	padding-bottom: 40px;
 }
 
-/*This is a flex item*/
+
 #logo
 {
 	width: 200px;
 }
 
-/*This is also a flex item*/
-/*We use margin left auto to send it all the way to the right*/
 #mainNav 
 {
 	margin-left: auto;
@@ -106,40 +92,39 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #informativeStart
 {
-	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: flex-start;
+	margin-top: 40px;
+	padding-bottom: 40px;
 }
 
-/*Get rid of this, here just to give different height to promo*/
 
 #info
 {
-	width: 600px;
+	font-family: 'Tomorrow', sans-serif;
 	font-size: 20px;
-	text-align: left;
 	line-height: 35px;
 	padding-top: 25px;
-	font-family: 'Tomorrow', sans-serif;
+	text-align: left;
+	width: 600px;
 }
 
 #programInfo 
 {
-	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
 	display: flex;
 	flex-direction: row;
-  	justify-content: space-between;
-	border-bottom: solid 1px #DDD;
+	justify-content: space-between;
+	margin-top: 40px;
 	padding-bottom: 40px;
 }
 
 .programs
 {
-	width: 200px;
 	height: 300px;
+	width: 200px;
 }
 
 #motion
@@ -164,21 +149,22 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 .info
 {
-	text-align: center;
-	padding-top: 20px;
 	color: whitesmoke;
 	font-family: 'Tomorrow', sans-serif;
+	padding-top: 20px;
+	text-align: center;
 }
 
 #mainFooter 
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	
 	display: flex;
 	flex-direction: row;
-  	justify-content: flex-start;
+	justify-content: flex-start;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	  
 }
-
 #footerNav 
 {
 	width: 500px;
@@ -192,28 +178,22 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #copyright
 {
-	text-align: right;
+	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
 	padding-top: 50px;
-	font-family: 'Oswald', sans-serif;
+	text-align: right;
 }
 
 /*Page 2*/
 
-#contentCon 
-{
-
-}
-
-
 #content1 
 {
-	text-align: left;
+	font-family: 'Tomorrow', sans-serif;
 	font-size: 30px;
 	line-height: 50px;
-	font-family: 'Tomorrow', sans-serif;
-	margin-top: 50px;
 	margin-bottom: 70px;
+	margin-top: 50px;
+	text-align: left;
 }
 
 
@@ -229,22 +209,21 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 .contactForm
 {
-	margin-top: 50px;
-	font-size: 20px;
 	font-family: 'Oswald', sans-serif;
-	padding-left: 180px;
+	font-size: 20px;
+	margin-top: 80px;
 }
 
 input, select {
-	font-size: 15px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 20px;
-	width: 300px;
-	height: 10px;
 	background-color: #efefef;
-	display: block;
 	border: 1px solid #999;
 	color: #333;
+	display: block;
 	font-family: 'Tomorrow', sans-serif;
+	font-size: 15px;
+	height: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	width: 300px;
   }
